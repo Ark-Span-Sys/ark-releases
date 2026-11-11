@@ -1,0 +1,34 @@
+name: Bug report
+description: Report an issue with a published ARK build (do not include sensitive data)
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include API keys, private investigation data, attack targets or security vulnerabilities. Use the private reporting process in SECURITY.md for vulnerabilities."
+  - type: input
+    id: version
+    attributes:
+      label: ARK version
+      placeholder: "e.g. v0.1.0 (once published)"
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system
+      placeholder: "e.g. Windows 11"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and reproduction steps (redacted)
+    validations:
+      required: true
