@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest an improvement to ARK
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please avoid sharing confidential investigations, secrets, exploit details or sensitive targets."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or user need
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: true
